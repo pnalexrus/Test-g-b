@@ -1,0 +1,82 @@
+{
+  "text": "и"
+}
+{
+  "entities": {},
+  "intents": [],
+  "speech": {
+    "confidence": 0,
+    "tokens": [
+      {
+        "confidence": 0.4139,
+        "end": 1080,
+        "start": 80,
+        "token": "и"
+      }
+    ]
+  },
+  "text": "и",
+  "traits": {}
+}
+{
+  "text": "и четыре, пять"
+}
+{
+  "entities": {},
+  "intents": [],
+  "speech": {
+    "confidence": 0,
+    "tokens": [
+      {
+        "confidence": 0.4139,
+        "end": 1080,
+        "start": 80,
+        "token": "и"
+      },
+      {
+        "confidence": 0.9991,
+        "end": 1560,
+        "start": 1080,
+        "token": "четыре,"
+      },
+      {
+        "confidence": 0.9845,
+        "end": 2160,
+        "start": 1560,
+        "token": "пять"
+      }
+    ]
+  },
+  "text": "и четыре, пять",
+  "traits": {}
+}
+{
+  "entities": {},
+  "intents": [],
+  "is_final": true,
+  "speech": {
+    "confidence": 0.7992,
+    "tokens": [
+      {
+        "confidence": 0.4139,
+        "end": 1080,
+        "start": 80,
+        "token": "и"
+      },
+      {
+        "confidence": 0.9991,
+        "end": 1560,
+        "start": 1080,
+        "token": "четыре,"
+      },
+      {
+        "confidence": 0.9845,
+        "end": 2160,
+        "start": 1560,
+        "token": "пять"
+      }
+    ]
+  },
+  "text": "и четыре, пять",
+  "traits": {}
+}
