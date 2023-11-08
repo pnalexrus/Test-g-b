@@ -14,8 +14,10 @@ class OpenAIWrap {
 	}
 
 	constructor(apiKey) {
-		this.openai = new OpenAI({ apiKey: apiKey })
-		this.witToken = config.get('WIT_AI_TOKEN') // Убедитесь, что токен добавлен в конфигурационный файл
+		// this.openai = new OpenAI({ apiKey: apiKey })
+		// this.witToken = config.get('WIT_AI_TOKEN') // Убедитесь, что токен добавлен в конфигурационный файл
+		this.openai = new OpenAI({ apiKey: process.env.OPENAI_KEY })
+		this.witToken = process.env.WIT_AI_TOKEN
 	}
 
 	async chat(messages) {
@@ -73,4 +75,5 @@ class OpenAIWrap {
 	}
 }
 
-export const openai = new OpenAIWrap(config.get('OPENAI_KEY'))
+// export const openai = new OpenAIWrap(config.get('OPENAI_KEY'))
+export const openai = new OpenAIWrap(process.env.OPENAI_KEY)

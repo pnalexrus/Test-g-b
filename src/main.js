@@ -1,15 +1,17 @@
 import { Telegraf, session } from 'telegraf'
 import { message } from 'telegraf/filters'
 import { code } from 'telegraf/format'
-import config from 'config'
+// import config from 'config'
 import { ogg } from './ogg.js'
 import { openai } from './openai.js'
+import dotenv from 'dotenv'
 
 const INITIAL_SESSION = {
 	messages: [],
 }
 
-const bot = new Telegraf(config.get('TELEGRAM_TOKEN'))
+// const bot = new Telegraf(config.get('TELEGRAM_TOKEN'))
+const bot = new Telegraf(process.env.TELEGRAM_TOKEN)
 
 bot.command('new', async (ctx) => {
 	ctx.session = INITIAL_SESSION
