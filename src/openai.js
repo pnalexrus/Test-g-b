@@ -64,7 +64,6 @@ class OpenAIWrap {
 			// Parse the JSON format string into an object
 			const dataObjects = JSON.parse(jsonFormat)
 			const text = dataObjects[dataObjects.length - 1].text
-			console.log(text)
 			return text
 		} catch (e) {
 			log('Error while transcription', e.message)
