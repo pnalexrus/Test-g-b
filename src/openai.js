@@ -1,5 +1,5 @@
 import { OpenAI } from 'openai'
-import config from 'config'
+// import config from 'config'
 import { readFileSync } from 'fs'
 import fetch from 'node-fetch' // Для выполнения HTTP-запросов
 import { log } from 'console'
